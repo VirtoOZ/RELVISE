@@ -7,7 +7,7 @@
 	// .header__container
 	&__container {
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		// height: 12.5vw;
 		height: 104px;
 		display: flex;
@@ -20,6 +20,13 @@
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 32px; /* 133.333% */
+		transition: all 0.3s ease 0s;
+		@media (min-width: ($md2+px)) {
+			&:hover {
+				// font-weight: 800;
+				letter-spacing: 2px;
+			}
+		}
 	}
 	// .header__menu
 	&__menu {
@@ -37,6 +44,12 @@
 		display: flex;
 		li {
 			margin: 0px 5px;
+			transition: all 0.3s ease 0s;
+			@media (min-width: ($md2+px)) {
+				&:hover {
+					transform: rotate(-10deg);
+				}
+			}
 		}
 	}
 	// .menu__link
@@ -47,6 +60,13 @@
 		font-weight: 600;
 		line-height: 24px; /* 171.429% */
 		letter-spacing: 0.2px;
+		transition: all 0.3s ease 0s;
+		@media (min-width: ($md2+px)) {
+			&:hover {
+				color: #0d5c63;
+			}
+		}
+		// transition: all 0.3s ease 0s;
 	}
 	// .menu__icon
 	&__icon {

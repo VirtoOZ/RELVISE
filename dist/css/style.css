@@ -698,7 +698,7 @@ ol.counter li::before {
 }
 .header__container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: 104px;
   display: flex;
   align-items: center;
@@ -710,6 +710,12 @@ ol.counter li::before {
   font-weight: 700;
   line-height: 32px;
   /* 133.333% */
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+  .header__logo:hover {
+    letter-spacing: 2px;
+  }
 }
 .menu__body {
   flex: 1 1 100%;
@@ -720,6 +726,12 @@ ol.counter li::before {
 }
 .menu__list li {
   margin: 0px 5px;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+  .menu__list li:hover {
+    transform: rotate(-10deg);
+  }
 }
 .menu__link {
   padding: 5px;
@@ -729,6 +741,12 @@ ol.counter li::before {
   line-height: 24px;
   /* 171.429% */
   letter-spacing: 0.2px;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+  .menu__link:hover {
+    color: #0d5c63;
+  }
 }
 .icon-menu {
   display: none;
