@@ -10,7 +10,7 @@
 //</Подключаем шрифты>=================================
 
 //<Иконочные шрифты>=================================
-@import "icons";
+// @import "icons";
 //</Иконочные шрифты>=================================
 
 //<Swiper>=================================
@@ -18,7 +18,7 @@
 //</Swiper>=================================
 
 //<Шрифт по умолчанию>=================================
-$fontFamily: "Monserrat";
+$fontFamily: Montserrat;
 //</Шрифт по умолчанию>=================================
 
 //</ШРИФТЫ>=================================
@@ -61,6 +61,7 @@ body {
 	max-width: $maxWidthContainer + px;
 	margin: 0px auto;
 	padding: 0px 20px;
+	position: relative;
 	// min-width: 0;
 	@media (max-width: ($md3+px)) {
 		padding: 0 10px;
@@ -132,4 +133,64 @@ body {
 	//======================================================================
 }
 //======================================================================
+.mainblock {
+	position: relative;
+	// .mainblock__container
+	&__container {
+		display: flex;
+	}
+	// .mainblock__contant
+	&__contant {
+		position: relative;
+		z-index: 2;
+		padding: 184px 10px 190px 0px;
+		flex: 0 0 51%;
+	}
+	// .mainblock__contant
+	&__contant > * {
+		margin: 0px 0px 30px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .mainblock__title
+	&__title {
+		color: #252b42;
+		font-family: Montserrat;
+		font-size: 58px;
+		font-weight: 800;
+		line-height: 80px; /* 137.931% */
+		letter-spacing: 0.2px;
+	}
+	// .mainblock__text
+	&__text {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 30px; /* 150% */
+		letter-spacing: 0.2px;
+	}
+	// .mainblock__body-btn
+	&__body-btn {
+	}
+	// .mainblock__button
+	&__button {
+		margin: 0px 5px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .mainblock__image
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: url("../img/mainblock/background.jpg") top / cover no-repeat;
+	}
+}
+
+.button {
+}
+
 //</ОСНОВНОЙ БЛОК>======================================================================

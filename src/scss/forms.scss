@@ -24,22 +24,23 @@
 //<BUTTON (a.btn+tab)>======================================================================
 .btn {
 	display: inline-flex;
-	padding: 0px 25px;
 	justify-content: center;
 	align-items: center;
-	height: 39px;
-	// object-fit: contain;
-	background-color: #f68038;
-	color: #fff;
-	transition: all 0.5s ease 0s;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 12px;
+	padding: 0px 35px;
+	height: 48px;
+	border-radius: 37px;
+	border: 1px solid #0d5c63;
+	color: #0d5c63;
+	// text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
 	// line-height: 18px;
+	transition: all 0.3s ease 0s;
 	@media (min-width: 992px) {
 		&:hover {
-			background-color: #b86029;
+			background-color: #ff7b47;
 			color: #fff;
+			border: 1px solid #ff7b47;
 		}
 	}
 	// .btn_gray

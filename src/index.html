@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.html',{
-"title":"Главная"
-})
+@@include('html/_head.html',{"title":"Главная"})
 
 <body>
 	<div class="wrapper">
 		@@include('html/_header.html',{})
 		<main class="page">
-			<div class="page__container _container">
-				<div class="page__content">
-
+			<section class="mainblock">
+				<div class="mainblock__container _container">
+					<div class="mainblock__contant">
+						<h1 class="mainblock__title">Finance and Consultancy Solution</h1>
+						<div class="mainblock__text">We know how large objects will act,<br> but things on a small scale.</div>
+						<div class="mainblock__body-btn">
+							<div class="mainblock__button button btn">Get Quote Now</div>
+							<div class="mainblock__button button btn">Learn More</div>
+						</div>
+					</div>
 				</div>
-			</div>
-	</div>
-	</main>
-	@@include('html/_footer.html',{})
+				<div class="mainblock__image"></div>
+			</section>
+
+		</main>
+		@@include('html/_footer.html',{})
 	</div>
 	<!-- @@include('html/_pagging.html',{}) -->
 	<!-- @@include('html/_popup.html',{}) -->
