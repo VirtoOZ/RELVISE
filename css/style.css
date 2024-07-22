@@ -82,7 +82,7 @@ aside {
 
 html,
 body {
-  font-family: "Roboto";
+  font-family: "Monserrat";
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -156,7 +156,7 @@ body._lock {
   flex-direction: column;
 }
 ._container {
-  max-width: 1180px;
+  max-width: 1040px;
   margin: 0px auto;
   padding: 0px 20px;
 }
