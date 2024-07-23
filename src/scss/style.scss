@@ -246,9 +246,11 @@ body {
 	}
 	// .services__colum
 	&__colum {
-		flex: 0 1 33.333%;
+		flex: 1 1 33.333%;
 		margin: 0px 15px;
 		@media (max-width: ($md2+px)) {
+			// flex: 0 0 230px;
+
 			// margin: 0px 7.5px;
 			margin: 7.5px;
 			&:last-child {
@@ -359,28 +361,29 @@ body {
 	}
 	// .advantages__colums
 	&__colums {
+		// max-height: 100%;
 		display: flex;
+		justify-content: center;
 		margin: 0px -15px;
 		@media (max-width: ($md2+px)) {
 			margin: 0px -7.5px;
 			flex-wrap: wrap;
-			justify-content: center;
 		}
 		@media (max-width: ($md3+px)) {
 		}
 	}
 	// .advantages__colum
 	&__colum {
-		flex: 0 1 33.333%;
+		width: 230px;
 		margin: 0px 15px;
 		@media (max-width: ($md2+px)) {
 			// margin: 0px 7.5px;
 			margin: 7.5px;
+		}
+		@media (max-width: ($md3+px)) {
 			&:last-child {
 				margin: 7.5px 7.5px 0px 7.5px;
 			}
-		}
-		@media (max-width: ($md3+px)) {
 		}
 	}
 }
@@ -417,8 +420,8 @@ body {
 .colum-advantages {
 	position: relative;
 	z-index: 2;
-	background-color: #fff;
-	box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+	// background-color: #fff;
+	background-color: #666;
 	transition: all 0.3s ease 0s;
 	// .colum-advantages__body all
 	&__body > * {
@@ -429,43 +432,47 @@ body {
 	}
 	// .colum-advantages__body
 	&__body {
-		padding: 35px 40px;
+		text-align: center;
+		padding: 30px 35px;
 		@media (max-width: ($md2+px)) {
 			// padding: 25px 20px;
 		}
-		// .colum-advantages__icon
-		&__icon {
-			width: 50px;
-			height: 50px;
-			// .colum-advantages__icon_consumer
-			&_consumer {
-				background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
-			}
-			// .colum-advantages__icon_services
-			&_services {
-				background: url("../img/services/finance.svg") 0 0 no-repeat;
-			}
-			// .colum-advantages__icon_environmental
-			&_environmental {
-				background: url("../img/services/services.svg") 0 0 no-repeat;
-			}
+	}
+	// .colum-advantages__icon
+	&__icon {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		// .colum-advantages__icon_consumer
+		&_consumer {
+			background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
 		}
-		// .colum-advantages__label
-		&__label {
-			color: #252b42;
-			font-size: 24px;
-			font-weight: 700;
-			line-height: 32px; /* 133.333% */
-			letter-spacing: 0.1px;
+		// .colum-advantages__icon_services
+		&_services {
+			background: url("../img/services/finance.svg") 0 0 no-repeat;
 		}
-		// .colum-advantages__text
-		&__text {
-			color: #737373;
-			font-size: 14px;
-			font-weight: 500;
-			line-height: 20px; /* 142.857% */
-			letter-spacing: 0.2px;
+		// .colum-advantages__icon_environmental
+		&_environmental {
+			background: url("../img/services/services.svg") 0 0 no-repeat;
 		}
 	}
+	// .colum-advantages__label
+	&__label {
+		color: #252b42;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px; /* 133.333% */
+		letter-spacing: 0.1px;
+	}
+	// .colum-advantages__text
+	&__text {
+		color: #737373;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		letter-spacing: 0.2px;
+		white-space: nowrap;
+	}
 }
+
 //</ОСНОВНОЙ БЛОК>======================================================================
