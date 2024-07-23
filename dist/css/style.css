@@ -702,10 +702,12 @@ ol.counter li::before {
   height: 104px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .header__logo {
   flex: 0 0 21.5%;
   color: #252b42;
+  padding: 0px 10px 0px 0px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -719,9 +721,11 @@ ol.counter li::before {
 }
 .menu__body {
   flex: 1 1 100%;
+  padding: 0px 10px 0px 0px;
 }
 .menu__list {
   margin: 0px -10px;
+  flex-wrap: wrap;
   display: flex;
 }
 .menu__list li {
@@ -751,14 +755,14 @@ ol.counter li::before {
 .icon-menu {
   display: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 640px) {
   .icon-menu {
     display: block;
     position: relative;
     width: 30px;
     height: 18px;
     top: 0px;
-    left: 10px;
+    left: 0px;
     cursor: pointer;
     z-index: 5;
   }
@@ -770,10 +774,10 @@ ol.counter li::before {
     -o-transition: all 0.3s ease 0s;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     top: calc(50% - 1px);
     left: 0;
-    background-color: #fff;
+    background-color: #0d5c63;
   }
   .icon-menu span:first-child {
     top: 0;
@@ -877,5 +881,7 @@ ol.counter li::before {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../img/mainblock/background.jpg") top/cover no-repeat;
+}
+.mainblock__image img {
+  object-position: right;
 }
