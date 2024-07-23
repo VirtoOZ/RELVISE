@@ -812,7 +812,7 @@ ol.counter li::before {
 }
 .page__advantages {
   margin: -134px 0px 0px 0px;
-  padding: 134px 0px 0px 0px;
+  padding: 134px 0px 80px 0px;
 }
 .page .breadcrumbs {
   overflow: auto;
@@ -923,28 +923,20 @@ ol.counter li::before {
   }
 }
 
-.services__colums {
+.services__body {
   display: flex;
-  margin: 0px -15px;
+  flex-wrap: wrap;
+  margin: 0px -15px -30px;
+  justify-content: center;
 }
-@media (max-width: 992px) {
-  .services__colums {
-    margin: 0px -7.5px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.services__colums {
+  flex: 0 1 33.333%;
+  padding: 0px 15px;
+  margin: 0px 0px 30px 0px;
 }
 .services__colum {
-  flex: 1 1 33.333%;
-  margin: 0px 15px;
-}
-@media (max-width: 992px) {
-  .services__colum {
-    margin: 7.5px;
-  }
-  .services__colum:last-child {
-    margin: 7.5px 7.5px 0px 7.5px;
-  }
+  height: 100%;
+  min-width: 300px;
 }
 .colum-services {
   position: relative;
@@ -1020,33 +1012,26 @@ ol.counter li::before {
 }
 .advantages__top {
   max-width: 620px;
+  margin-bottom: 50px;
 }
-.advantages__colums {
+.advantages__bottom {
   display: flex;
   justify-content: center;
-  margin: 0px -15px;
+  flex-wrap: wrap;
+  margin: 0px -15px -15px;
 }
-@media (max-width: 992px) {
-  .advantages__colums {
-    margin: 0px -7.5px;
-    flex-wrap: wrap;
-  }
+.advantages__bottom:last-child {
+  margin-bottom: -30px;
+}
+.advantages__colums {
+  flex: 0 1 25%;
+  margin: 0px 0px 30px 0px;
+  padding: 0px 15px;
 }
 .advantages__colum {
-  width: 230px;
-  margin: 0px 15px;
+  min-width: 220px;
+  height: 100%;
 }
-@media (max-width: 992px) {
-  .advantages__colum {
-    margin: 7.5px;
-  }
-}
-@media (max-width: 768px) {
-  .advantages__colum:last-child {
-    margin: 7.5px 7.5px 0px 7.5px;
-  }
-}
-
 .title-block > * {
   margin: 0px 0px 10px 0px;
 }
@@ -1055,7 +1040,8 @@ ol.counter li::before {
 }
 
 .title-block {
-  margin: 0px auto;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
 .title-block__title {
@@ -1083,7 +1069,7 @@ ol.counter li::before {
 .colum-advantages {
   position: relative;
   z-index: 2;
-  background-color: #666;
+  background-color: #fff;
   transition: all 0.3s ease 0s;
 }
 .colum-advantages__body > * {
@@ -1102,13 +1088,16 @@ ol.counter li::before {
   height: 50px;
 }
 .colum-advantages__icon_consumer {
-  background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
+  background: url("../img/advantages/consumer.svg") 0 0 no-repeat;
 }
 .colum-advantages__icon_services {
-  background: url("../img/services/finance.svg") 0 0 no-repeat;
+  background: url("../img/advantages/services.svg") 0 0 no-repeat;
 }
 .colum-advantages__icon_environmental {
-  background: url("../img/services/services.svg") 0 0 no-repeat;
+  background: url("../img/advantages/environmental.svg") 0 0 no-repeat;
+}
+.colum-advantages__icon_business {
+  background: url("../img/advantages/finance.svg") 0 0 no-repeat;
 }
 .colum-advantages__label {
   color: #252b42;
@@ -1125,5 +1114,4 @@ ol.counter li::before {
   line-height: 20px;
   /* 142.857% */
   letter-spacing: 0.2px;
-  white-space: nowrap;
 }
