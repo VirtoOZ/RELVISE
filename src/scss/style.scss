@@ -104,6 +104,11 @@ body {
 	&__services {
 		margin: -110px 0px 0px 0px;
 	}
+	// .page__advantages
+	&__advantages {
+		margin: -134px 0px 0px 0px;
+		padding: 134px 0px 0px 0px;
+	}
 	//======================================================================
 	.breadcrumbs {
 		overflow: auto;
@@ -263,6 +268,7 @@ body {
 	z-index: 2;
 	background-color: #fff;
 	box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+	transition: all 0.3s ease 0s;
 	@media (min-width: ($md2+px)) {
 		&:hover {
 			background-color: #0d5c63;
@@ -317,7 +323,6 @@ body {
 			background: url("../img/services/services.svg") 0 0 no-repeat;
 		}
 	}
-
 	// .colum-services__label
 	&__label {
 		color: #252b42;
@@ -335,5 +340,132 @@ body {
 		letter-spacing: 0.2px;
 	}
 }
-
+//======================================================================
+.advantages {
+	background-color: #fafafa;
+	// .advantages__container
+	&__container {
+	}
+	// .advantages__body
+	&__body {
+		margin: 80px 0px 0px 0px;
+	}
+	// .advantages__top
+	&__top {
+		max-width: 620px;
+	}
+	// .advantages__bottom
+	&__bottom {
+	}
+	// .advantages__colums
+	&__colums {
+		display: flex;
+		margin: 0px -15px;
+		@media (max-width: ($md2+px)) {
+			margin: 0px -7.5px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media (max-width: ($md3+px)) {
+		}
+	}
+	// .advantages__colum
+	&__colum {
+		flex: 0 1 33.333%;
+		margin: 0px 15px;
+		@media (max-width: ($md2+px)) {
+			// margin: 0px 7.5px;
+			margin: 7.5px;
+			&:last-child {
+				margin: 7.5px 7.5px 0px 7.5px;
+			}
+		}
+		@media (max-width: ($md3+px)) {
+		}
+	}
+}
+// .title-block__title all
+.title-block > * {
+	margin: 0px 0px 10px 0px;
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.title-block {
+	margin: 0px auto;
+	text-align: center;
+	// .title-block__body
+	&__body {
+	}
+	// .title-block__title
+	&__title {
+		color: #252b42;
+		@include adaptiv-font(40, 30, 1);
+		font-weight: 700;
+		line-height: 57px; /* 142.5% */
+		letter-spacing: 0.2px;
+	}
+	// .title-block__text
+	&__text {
+		color: #737373;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		letter-spacing: 0.2px;
+	}
+}
+.colum-advantages {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+	transition: all 0.3s ease 0s;
+	// .colum-advantages__body all
+	&__body > * {
+		margin: 0px 0px 10px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .colum-advantages__body
+	&__body {
+		padding: 35px 40px;
+		@media (max-width: ($md2+px)) {
+			// padding: 25px 20px;
+		}
+		// .colum-advantages__icon
+		&__icon {
+			width: 50px;
+			height: 50px;
+			// .colum-advantages__icon_consumer
+			&_consumer {
+				background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
+			}
+			// .colum-advantages__icon_services
+			&_services {
+				background: url("../img/services/finance.svg") 0 0 no-repeat;
+			}
+			// .colum-advantages__icon_environmental
+			&_environmental {
+				background: url("../img/services/services.svg") 0 0 no-repeat;
+			}
+		}
+		// .colum-advantages__label
+		&__label {
+			color: #252b42;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 32px; /* 133.333% */
+			letter-spacing: 0.1px;
+		}
+		// .colum-advantages__text
+		&__text {
+			color: #737373;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 20px; /* 142.857% */
+			letter-spacing: 0.2px;
+		}
+	}
+}
 //</ОСНОВНОЙ БЛОК>======================================================================
