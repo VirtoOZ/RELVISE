@@ -935,7 +935,7 @@ ol.counter li::before {
   }
 }
 .services__colum {
-  flex: 0 1 33.333%;
+  flex: 1 1 33.333%;
   margin: 0px 15px;
 }
 @media (max-width: 992px) {
@@ -1023,27 +1023,30 @@ ol.counter li::before {
 }
 .advantages__colums {
   display: flex;
+  justify-content: center;
   margin: 0px -15px;
 }
 @media (max-width: 992px) {
   .advantages__colums {
     margin: 0px -7.5px;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .advantages__colum {
-  flex: 0 1 33.333%;
+  width: 230px;
   margin: 0px 15px;
 }
 @media (max-width: 992px) {
   .advantages__colum {
     margin: 7.5px;
   }
+}
+@media (max-width: 768px) {
   .advantages__colum:last-child {
     margin: 7.5px 7.5px 0px 7.5px;
   }
 }
+
 .title-block > * {
   margin: 0px 0px 10px 0px;
 }
@@ -1080,8 +1083,7 @@ ol.counter li::before {
 .colum-advantages {
   position: relative;
   z-index: 2;
-  background-color: #fff;
-  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  background-color: #666;
   transition: all 0.3s ease 0s;
 }
 .colum-advantages__body > * {
@@ -1091,22 +1093,24 @@ ol.counter li::before {
   margin: 0px 0px 0px 0px;
 }
 .colum-advantages__body {
-  padding: 35px 40px;
+  text-align: center;
+  padding: 30px 35px;
 }
-.colum-advantages__body__icon {
+.colum-advantages__icon {
+  display: inline-block;
   width: 50px;
   height: 50px;
 }
-.colum-advantages__body__icon_consumer {
+.colum-advantages__icon_consumer {
   background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
 }
-.colum-advantages__body__icon_services {
+.colum-advantages__icon_services {
   background: url("../img/services/finance.svg") 0 0 no-repeat;
 }
-.colum-advantages__body__icon_environmental {
+.colum-advantages__icon_environmental {
   background: url("../img/services/services.svg") 0 0 no-repeat;
 }
-.colum-advantages__body__label {
+.colum-advantages__label {
   color: #252b42;
   font-size: 24px;
   font-weight: 700;
@@ -1114,11 +1118,12 @@ ol.counter li::before {
   /* 133.333% */
   letter-spacing: 0.1px;
 }
-.colum-advantages__body__text {
+.colum-advantages__text {
   color: #737373;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   /* 142.857% */
   letter-spacing: 0.2px;
+  white-space: nowrap;
 }
