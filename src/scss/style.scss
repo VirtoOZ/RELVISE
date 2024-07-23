@@ -144,7 +144,10 @@ body {
 		position: relative;
 		z-index: 2;
 		padding: 184px 10px 190px 0px;
-		flex: 0 0 51%;
+		flex: 0 1 40%;
+		@media (max-width: ($md4+px)) {
+			flex: 0 1 300px;
+		}
 	}
 	// .mainblock__contant
 	&__contant > * {
@@ -157,7 +160,7 @@ body {
 	&__title {
 		color: #252b42;
 		font-family: Montserrat;
-		@include adaptiv-font(58, 24, 30);
+		@include adaptiv-font(58, 38, 0);
 		// font-size: 58px;
 		font-weight: 800;
 		line-height: 137.931%; /* 80px */
@@ -165,7 +168,7 @@ body {
 	}
 	// .mainblock__text
 	&__text {
-		@include adaptiv-font(20, 14, 30);
+		@include adaptiv-font(20, 16, 30);
 		// font-size: 20px;
 		font-weight: 500;
 		line-height: 150%; /*  30px*/
@@ -174,12 +177,21 @@ body {
 	}
 	// .mainblock__body-btn
 	&__body-btn {
+		display: flex;
+		flex-wrap: wrap;
 	}
 	// .mainblock__button
 	&__button {
-		margin: 0px 5px 0px 0px;
+		margin: 0px 5px 10px 0px;
 		&:last-child {
 			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: ($md2+px)) {
+			flex: 1 1 100%;
+			margin: 0px -10px 10px 0px;
+			&:last-child {
+				margin: 0px -10px 0px 0px;
+			}
 		}
 	}
 	// .mainblock__image
@@ -190,8 +202,13 @@ body {
 		top: 0;
 		left: 0;
 		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
 			object-position: right;
-			background-color: rgba(0, 0, 0, 0.5);
 			@media (max-width: ($md2+px)) {
 				opacity: 0.5;
 			}
