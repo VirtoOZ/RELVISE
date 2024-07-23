@@ -856,18 +856,19 @@ ol.counter li::before {
 .mainblock__title {
   color: #252b42;
   font-family: Montserrat;
-  font-size: 58px;
+  font-size: calc(24px + 34 * ((100vw - 320px) / 1120));
   font-weight: 800;
-  line-height: 80px;
-  /* 137.931% */
+  line-height: 137.931%;
+  /* 80px */
   letter-spacing: 0.2px;
 }
 .mainblock__text {
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   font-weight: 500;
-  line-height: 30px;
-  /* 150% */
+  line-height: 150%;
+  /*  30px*/
   letter-spacing: 0.2px;
+  color: #737373;
 }
 .mainblock__button {
   margin: 0px 5px 0px 0px;
@@ -884,4 +885,10 @@ ol.counter li::before {
 }
 .mainblock__image img {
   object-position: right;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .mainblock__image img {
+    opacity: 0.5;
+  }
 }

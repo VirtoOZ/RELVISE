@@ -157,17 +157,20 @@ body {
 	&__title {
 		color: #252b42;
 		font-family: Montserrat;
-		font-size: 58px;
+		@include adaptiv-font(58, 24, 30);
+		// font-size: 58px;
 		font-weight: 800;
-		line-height: 80px; /* 137.931% */
+		line-height: 137.931%; /* 80px */
 		letter-spacing: 0.2px;
 	}
 	// .mainblock__text
 	&__text {
-		font-size: 20px;
+		@include adaptiv-font(20, 14, 30);
+		// font-size: 20px;
 		font-weight: 500;
-		line-height: 30px; /* 150% */
+		line-height: 150%; /*  30px*/
 		letter-spacing: 0.2px;
+		color: #737373;
 	}
 	// .mainblock__body-btn
 	&__body-btn {
@@ -188,6 +191,10 @@ body {
 		left: 0;
 		img {
 			object-position: right;
+			background-color: rgba(0, 0, 0, 0.5);
+			@media (max-width: ($md2+px)) {
+				opacity: 0.5;
+			}
 		}
 	}
 }
