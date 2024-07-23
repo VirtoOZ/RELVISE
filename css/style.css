@@ -807,6 +807,9 @@ ol.counter li::before {
     display: flex;
   }
 }
+.page__services {
+  margin: -110px 0px 0px 0px;
+}
 .page .breadcrumbs {
   overflow: auto;
   margin: 0px 0px 20px 0px;
@@ -914,4 +917,92 @@ ol.counter li::before {
   .mainblock__image img {
     opacity: 0.5;
   }
+}
+
+.services__colums {
+  display: flex;
+  margin: 0px -15px;
+}
+@media (max-width: 992px) {
+  .services__colums {
+    margin: 0px -7.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.services__colum {
+  flex: 0 1 33.333%;
+  margin: 0px 15px;
+}
+@media (max-width: 992px) {
+  .services__colum {
+    margin: 7.5px;
+  }
+  .services__colum:last-child {
+    margin: 7.5px 7.5px 0px 7.5px;
+  }
+}
+.colum-services {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+@media (min-width: 992px) {
+  .colum-services:hover {
+    background-color: #0d5c63;
+  }
+  .colum-services:hover .colum-services__icon_enviroment {
+    background: url("../img/services/enviroment_h.svg") 0 0 no-repeat;
+  }
+  .colum-services:hover .colum-services__icon_finance {
+    background: url("../img/services/finance_h.svg") 0 0 no-repeat;
+  }
+  .colum-services:hover .colum-services__icon_services {
+    background: url("../img/services/services_h.svg") 0 0 no-repeat;
+  }
+  .colum-services:hover .colum-services__label {
+    color: #fff;
+  }
+  .colum-services:hover .colum-services__text {
+    color: #fff;
+  }
+}
+.colum-services__body > * {
+  margin: 0px 0px 10px 0px;
+}
+.colum-services__body > *:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.colum-services__body {
+  padding: 35px 40px;
+}
+.colum-services__icon {
+  width: 50px;
+  height: 50px;
+}
+.colum-services__icon_enviroment {
+  background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
+}
+.colum-services__icon_finance {
+  background: url("../img/services/finance.svg") 0 0 no-repeat;
+}
+.colum-services__icon_services {
+  background: url("../img/services/services.svg") 0 0 no-repeat;
+}
+.colum-services__label {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: 0.1px;
+}
+.colum-services__text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.2px;
 }
