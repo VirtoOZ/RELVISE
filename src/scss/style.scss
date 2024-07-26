@@ -14,7 +14,7 @@
 //</Иконочные шрифты>=================================
 
 //<Swiper>=================================
-// @import "swiper-bundle";
+@import "swiper-bundle";
 //</Swiper>=================================
 
 //<Шрифт по умолчанию>=================================
@@ -117,6 +117,10 @@ body {
 	}
 	// .page__whoweare
 	&__whoweare {
+		margin: 0px 0px 136px 0px;
+	}
+	// .page__brands
+	&__brands {
 	}
 	//======================================================================
 	.breadcrumbs {
@@ -647,6 +651,8 @@ body {
 			left: 0;
 			object-fit: cover;
 		}
+		source {
+		}
 	}
 	// .whoweare__description
 	&__description {
@@ -699,6 +705,27 @@ body {
 		font-weight: 600;
 		line-height: 171.429%; /* 24px */
 		letter-spacing: 0.2px;
+	}
+}
+//======================================================================
+.brands {
+	max-width: 100%;
+	// .brands__container
+	&__container {
+	}
+	// .brands__slider
+	&__slider {
+	}
+}
+.brandslider {
+	// .brandslider__body
+	&__body {
+	}
+	// .brandslider__slide
+	&__slide {
+	}
+	// .brandslider__image
+	&__image {
 	}
 }
 

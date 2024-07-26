@@ -63,115 +63,115 @@ if (sliderScrollItems.length > 0) {
 	}
 }*/
 //Инициализация и Настройки слайдера 1
-if (document.querySelector('.mainslider')) {
-	let mainSwiper = new Swiper('.mainslider__body', {
+if (document.querySelector('.brandslider')) {
+	let brandSwiper = new Swiper('brandslider__body', {
 		observer: true,
 		observeParents: false,
-		slidesPerView: 1,
-		spaceBetween: 30,
-		autoHeight: true,
-		speed: 800,
-		// Dotts
-		pagination: {
-			el: '.mainslider__dotts',
-			clickable: true,
-		},
-	});
-	let mainsliderImages = document.querySelectorAll('.mainslider__image');
-	let mainsliderDotts = document.querySelectorAll('.mainslider__dotts .swiper-pagination-bullet');
-	for (let index = 0; index < mainsliderImages.length; index++) {
-		const mainsliderImage = mainsliderImages[index].querySelector('img').getAttribute('src');
-		mainsliderDotts[index].style.backgroundImage = "url('" + mainsliderImage + "')";
-	}
-}
-//Инициализация и Настройки слайдера 2
-if (document.querySelector('.products-slider')) {
-	let productsSlider = new Swiper('.products-slider__body', {
-		observer: true,
-		observeParents: false,
-		slidesPerView: 1,
+		slidesPerView: 2,
 		spaceBetween: 0,
 		autoHeight: true,
 		speed: 800,
 		// Dotts
-		pagination: {
-			el: '.products-slider__info',
-			// clickable: true,
-			type: 'fraction',
-		},
-		// Arrows
-		navigation: {
-			nextEl: '.products-slider__arrow_next',
-			prevEl: '.products-slider__arrow_prev',
-		},
+		// pagination: {
+		// 	el: '.mainslider__dotts',
+		// 	clickable: true,
+		// },
 	});
+	// let brandsliderImages = document.querySelectorAll('.brandslider__image');
+	// let mainsliderDotts = document.querySelectorAll('.mainslider__dotts .swiper-pagination-bullet');
+	// for (let index = 0; index < brandsliderImages.length; index++) {
+	// const brandsliderImage = brandsliderImages[index].querySelector('img').getAttribute('src');
+	// mainsliderDotts[index].style.backgroundImage = "url('" + mainsliderImage + "')";
+	// }
 }
-//Инициализация и Настройки слайдера 3
-if (document.querySelector('.brands-slider')) {
-	let brandsSlider = new Swiper('.brands-slider__body', {
-		observer: true,
-		observeParents: false,
-		slidesPerView: 5,
-		spaceBetween: 0,
-		// autoHeight: true,
-		speed: 800,
-		// loop: true,
-		// loopAdditionalSlides: 1,
-		// Arrows
-		navigation: {
-			nextEl: '.brands-slider__arrow_next',
-			prevEl: '.brands-slider__arrow_prev',
-		},
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				autoHeight: true,
-			},
-			480: {
-				slidesPerView: 2,
-			},
-			640: {
-				slidesPerView: 3,
-			},
-			768: {
-				slidesPerView: 4,
-			},
-			992: {
-				slidesPerView: 5,
-			},
+// //Инициализация и Настройки слайдера 2
+// if (document.querySelector('.products-slider')) {
+// 	let productsSlider = new Swiper('.products-slider__body', {
+// 		observer: true,
+// 		observeParents: false,
+// 		slidesPerView: 1,
+// 		spaceBetween: 0,
+// 		autoHeight: true,
+// 		speed: 800,
+// 		// Dotts
+// 		pagination: {
+// 			el: '.products-slider__info',
+// 			// clickable: true,
+// 			type: 'fraction',
+// 		},
+// 		// Arrows
+// 		navigation: {
+// 			nextEl: '.products-slider__arrow_next',
+// 			prevEl: '.products-slider__arrow_prev',
+// 		},
+// 	});
+// }
+// //Инициализация и Настройки слайдера 3
+// if (document.querySelector('.brands-slider')) {
+// 	let brandsSlider = new Swiper('.brands-slider__body', {
+// 		observer: true,
+// 		observeParents: false,
+// 		slidesPerView: 5,
+// 		spaceBetween: 0,
+// 		// autoHeight: true,
+// 		speed: 800,
+// 		// loop: true,
+// 		// loopAdditionalSlides: 1,
+// 		// Arrows
+// 		navigation: {
+// 			nextEl: '.brands-slider__arrow_next',
+// 			prevEl: '.brands-slider__arrow_prev',
+// 		},
+// 		breakpoints: {
+// 			320: {
+// 				slidesPerView: 1,
+// 				autoHeight: true,
+// 			},
+// 			480: {
+// 				slidesPerView: 2,
+// 			},
+// 			640: {
+// 				slidesPerView: 3,
+// 			},
+// 			768: {
+// 				slidesPerView: 4,
+// 			},
+// 			992: {
+// 				slidesPerView: 5,
+// 			},
 
-		},
-	});
-}
+// 		},
+// 	});
+// }
 
-//Инициализация и Настройки слайдера 4
-if (document.querySelector('.images-product')) {
+// //Инициализация и Настройки слайдера 4
+// if (document.querySelector('.images-product')) {
 
-	//Инициализация и Настройки слайдера 5
-	let imagesSubSlider = new Swiper('.images-product__subslider', {
-		observer: true,
-		observeParents: true,
-		slidesPerView: 4,
-		spaceBetween: 0,
-		// autoHeight: true,
-		speed: 800,
-		// loop: true,
-		// loopAdditionalSlides: 1,
-	});
-	let imagesSlider = new Swiper('.images-product__mainslider', {
-		observer: true,
-		observeParents: false,
-		slidesPerView: 1,
-		spaceBetween: 0,
-		// autoHeight: true,
-		speed: 800,
-		// loop: true,
-		// loopAdditionalSlides: 1,
-		thumbs: {
-			swiper: imagesSubSlider
-		},
-	});
-}
+// 	//Инициализация и Настройки слайдера 5
+// 	let imagesSubSlider = new Swiper('.images-product__subslider', {
+// 		observer: true,
+// 		observeParents: true,
+// 		slidesPerView: 4,
+// 		spaceBetween: 0,
+// 		// autoHeight: true,
+// 		speed: 800,
+// 		// loop: true,
+// 		// loopAdditionalSlides: 1,
+// 	});
+// 	let imagesSlider = new Swiper('.images-product__mainslider', {
+// 		observer: true,
+// 		observeParents: false,
+// 		slidesPerView: 1,
+// 		spaceBetween: 0,
+// 		// autoHeight: true,
+// 		speed: 800,
+// 		// loop: true,
+// 		// loopAdditionalSlides: 1,
+// 		thumbs: {
+// 			swiper: imagesSubSlider
+// 		},
+// 	});
+// }
 
 /* //шаблон с Настройками слайдера
 if (document.querySelector('.slider-rooms__body')) {
