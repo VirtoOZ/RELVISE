@@ -1680,6 +1680,9 @@ ol.counter li::before {
 .page__whoweare {
   margin: 0px 0px 136px 0px;
 }
+.page__brands {
+  padding: 50px 0px 137px 0px;
+}
 .page .breadcrumbs {
   overflow: auto;
   margin: 0px 0px 20px 0px;
@@ -2147,5 +2150,14 @@ ol.counter li::before {
 }
 
 .brands {
-  max-width: 100%;
+  background-color: #fafafa;
+}
+.brandslider__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brandslider__slide {
+  align-self: center;
+  text-align: center;
 }
