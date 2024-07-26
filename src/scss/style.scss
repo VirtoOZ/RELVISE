@@ -121,6 +121,7 @@ body {
 	}
 	// .page__brands
 	&__brands {
+		padding: 50px 0px 137px 0px;
 	}
 	//======================================================================
 	.breadcrumbs {
@@ -709,7 +710,7 @@ body {
 }
 //======================================================================
 .brands {
-	max-width: 100%;
+	background-color: #fafafa;
 	// .brands__container
 	&__container {
 	}
@@ -720,12 +721,19 @@ body {
 .brandslider {
 	// .brandslider__body
 	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	// .brandslider__slide
 	&__slide {
+		align-self: center;
+		text-align: center;
 	}
 	// .brandslider__image
 	&__image {
+		img {
+		}
 	}
 }
 

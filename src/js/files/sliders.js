@@ -64,13 +64,14 @@ if (sliderScrollItems.length > 0) {
 }*/
 //Инициализация и Настройки слайдера 1
 if (document.querySelector('.brandslider')) {
-	let brandSwiper = new Swiper('brandslider__body', {
-		observer: true,
+	let brandSwiper = new Swiper('.brandslider__body', {
+		observer: false,
 		observeParents: false,
-		slidesPerView: 2,
+		slidesPerView: 6,
 		spaceBetween: 0,
-		autoHeight: true,
+		autoHeight: false,
 		speed: 800,
+		loop: false,
 		// Dotts
 		// pagination: {
 		// 	el: '.mainslider__dotts',
