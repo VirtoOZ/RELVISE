@@ -69,7 +69,7 @@ if (document.querySelector('.brandslider')) {
 		observeParents: false,
 		slidesPerView: 6,
 		spaceBetween: 0,
-		autoHeight: false,
+		// autoHeight: true,
 		speed: 800,
 		loop: false,
 		// Dotts
@@ -77,6 +77,28 @@ if (document.querySelector('.brandslider')) {
 		// 	el: '.mainslider__dotts',
 		// 	clickable: true,
 		// },
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				autoHeight: true,
+			},
+			480: {
+				slidesPerView: 3,
+			},
+			640: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+		},
 	});
 	// let brandsliderImages = document.querySelectorAll('.brandslider__image');
 	// let mainsliderDotts = document.querySelectorAll('.mainslider__dotts .swiper-pagination-bullet');
