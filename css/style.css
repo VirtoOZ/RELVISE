@@ -2192,12 +2192,24 @@ ol.counter li::before {
   letter-spacing: 0.1px;
   padding: 0px 10px 0px 0px;
 }
+@media (max-width: 759.98px) {
+  .subscribe__title {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.subscribe__body-form {
+  height: 55px;
+}
 .subscribe__form {
   flex: 0 1 50%;
-  display: flex;
+}
+@media (min-width: 479.98px) {
+  .subscribe__form {
+    display: flex;
+  }
 }
 .subscribe__input {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   width: 100%;
   padding: 0px 20px;
 }
@@ -2206,14 +2218,31 @@ ol.counter li::before {
     width: 68%;
   }
 }
+@media (min-width: 479.98px) {
+  .subscribe__input {
+    border-radius: 5px 0 0 5px;
+  }
+}
 .subscribe__button {
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   line-height: 200%;
   /* 28px */
   letter-spacing: 0.2px;
   border: 0px;
+}
+@media (max-width: 989.98px) {
+  .subscribe__button {
+    background-color: #ff7b47;
+    color: #fff;
+  }
+}
+@media (min-width: 479.98px) {
+  .subscribe__button {
+    border-radius: 0 5px 5px 0;
+  }
 }
 .subscribe__strip {
   background-color: #252b42;
