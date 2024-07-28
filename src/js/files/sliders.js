@@ -69,7 +69,7 @@ if (document.querySelector('.brandslider')) {
 		observeParents: false,
 		slidesPerView: 6,
 		spaceBetween: 0,
-		// autoHeight: true,
+		autoHeight: true,
 		speed: 800,
 		loop: false,
 		// Dotts
@@ -84,10 +84,10 @@ if (document.querySelector('.brandslider')) {
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				autoHeight: true,
+				// autoHeight: false,
 			},
 			480: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			640: {
 				slidesPerView: 4,
