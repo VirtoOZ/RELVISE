@@ -77,13 +77,13 @@ if (document.querySelector('.brandslider')) {
 		// 	el: '.mainslider__dotts',
 		// 	clickable: true,
 		// },
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		breakpoints: {
 			320: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 				autoHeight: true,
 			},
 			480: {
