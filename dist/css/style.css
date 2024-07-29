@@ -2304,3 +2304,27 @@ ol.counter li::before {
   height: 77px;
   width: 100%;
 }
+
+.getintouch-slider__slide {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.getintouch-slider__cart > * {
+  margin: 0px 0px 15px 0px;
+}
+.getintouch-slider__cart > *:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.getintouch-slider__cart {
+  width: 100%;
+  display: block;
+  background-color: #fff;
+}
+.getintouch-slider .swiper-slide-active .getintouch-slider__cart {
+  background-color: #252b42;
+}

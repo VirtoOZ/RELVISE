@@ -139,6 +139,9 @@ body {
 	// .page__subscribe
 	&__subscribe {
 	}
+	// .page__getintouch
+	&__getintouch {
+	}
 	//======================================================================
 	.breadcrumbs {
 		overflow: auto;
@@ -861,6 +864,67 @@ body {
 		background-color: #252b42;
 		height: 77px;
 		width: 100%;
+	}
+}
+//======================================================================
+.getintouch {
+	// .getintouch__container
+	&__container {
+	}
+	// .getintouch__top
+	&__top {
+	}
+	// .getintouch__slider
+	&__slider {
+	}
+}
+.getintouch-slider {
+	// .getintouch-slider__body
+	&__body {
+	}
+	// .getintouch-slider__slide
+	&__slide {
+		width: 300px;
+		height: 300px;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		// flex-direction: column;
+		align-items: center;
+	}
+	// .getintouch-slider__cart all childs
+	&__cart > * {
+		margin: 0px 0px 15px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .getintouch-slider__cart
+	&__cart {
+		width: 100%;
+		display: block;
+		background-color: #fff;
+		// flex: 0 1 33.333%;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+	}
+	.swiper-slide-active .getintouch-slider__cart {
+		background-color: #252b42;
+	}
+	// .getintouch-slider__icon
+	&__icon {
+	}
+	// .getintouch-slider__email
+	&__email {
+	}
+	// .getintouch-slider__label
+	&__label {
+	}
+	// .getintouch-slider__button
+	&__button {
 	}
 }
 //</ОСНОВНОЙ БЛОК>======================================================================
