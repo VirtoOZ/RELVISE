@@ -69,7 +69,7 @@ if (document.querySelector('.brandslider')) {
 		observeParents: false,
 		slidesPerView: 6,
 		spaceBetween: 0,
-		autoHeight: true,
+		autoHeight: false,
 		speed: 800,
 		loop: false,
 		// Dotts
