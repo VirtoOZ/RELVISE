@@ -1658,6 +1658,168 @@ ol.counter li::before {
   }
 }
 
+.footer__top {
+  padding: 40px 0;
+}
+@media (max-width: 639.98px) {
+  .footer__top {
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 639.98px) {
+  .footer__top {
+    justify-content: space-between;
+    display: flex;
+  }
+}
+@media (max-width: 639.98px) {
+  .footer__title {
+    margin: 0px 0px 15px 0px;
+  }
+}
+.footer__label {
+  display: flex;
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
+  /* 32px */
+  letter-spacing: 0.1px;
+}
+.footer__text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.857%;
+  /* 20px */
+  letter-spacing: 0.2px;
+}
+.footer__button {
+  border-radius: 5px;
+}
+.footer__body * > a {
+  color: #fff;
+}
+.footer__body {
+  background-color: #17213c;
+  color: #fff;
+  padding: 50px 0px;
+}
+.menu-footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 639.98px) {
+  .menu-footer__menu {
+    justify-content: space-evenly;
+  }
+}
+.menu-footer__column {
+  padding: 0px 30px 0px 0px;
+}
+@media (max-width: 989.98px) {
+  .menu-footer__column:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 759.98px) {
+  .menu-footer__column:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 639.98px) {
+  .menu-footer__column:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 479.98px) {
+  .menu-footer__column:nth-child(1) {
+    display: none;
+  }
+}
+.menu-footer__category {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.1px;
+  margin: 0px 0px 20px 0px;
+}
+.menu-footer li {
+  font-weight: 600;
+  line-height: 171.429%;
+  /* 24px */
+  letter-spacing: 0.2px;
+  margin: 0px 0px 10px 0px;
+}
+.menu-footer li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.menu-footer__item {
+  position: relative;
+  padding: 0px 0px 0px 34px;
+}
+.menu-footer__item::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.menu-footer__item_tel::after {
+  background: url("../img/footer/telephone.svg") left no-repeat;
+}
+@media (min-width: 989.98px) {
+  .menu-footer__item_tel:hover::after {
+    background: url("../img/footer/telephone_h.svg") left no-repeat;
+  }
+}
+.menu-footer__item_adr::after {
+  background: url("../img/footer/location.svg") left no-repeat;
+}
+@media (min-width: 989.98px) {
+  .menu-footer__item_adr:hover::after {
+    background: url("../img/footer/location_h.svg") left no-repeat;
+  }
+}
+.menu-footer__item_mail::after {
+  background: url("../img/footer/mail.svg") left no-repeat;
+}
+@media (min-width: 989.98px) {
+  .menu-footer__item_mail:hover::after {
+    background: url("../img/footer/mail_h.svg") left no-repeat;
+  }
+}
+
+.right {
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right__text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 171.429%;
+  /* 24px */
+  letter-spacing: 0.2px;
+  padding: 0px 10px 0px 0px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 479.98px) {
+  .social {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
 .page {
   flex: 1 1 auto;
 }
@@ -2311,12 +2473,22 @@ ol.counter li::before {
 .getintouch__top {
   margin: 0px 0px 80px 0px;
 }
+@media (max-width: 759.98px) {
+  .getintouch__top {
+    margin: 0px 0px 40px 0px;
+  }
+}
 .getintouch__slider {
   padding: 0px 0px 150px 0px;
 }
+@media (max-width: 759.98px) {
+  .getintouch__slider {
+    padding: 0px 0px 80px 0px;
+  }
+}
 
 .getintouch-slider__body {
-  height: 393px;
+  height: 100%;
 }
 .getintouch-slider__slide {
   width: 328px;
@@ -2327,6 +2499,11 @@ ol.counter li::before {
   background-color: #fff;
   text-align: center;
 }
+@media (max-width: 479.98px) {
+  .getintouch-slider__slide {
+    width: 280px;
+  }
+}
 .getintouch-slider__cart > * {
   margin: 0px 0px 15px 0px;
 }
@@ -2335,7 +2512,12 @@ ol.counter li::before {
 }
 .getintouch-slider__cart {
   width: 100%;
-  padding: 80px 40px;
+  padding: 70px 40px;
+}
+@media (max-width: 479.98px) {
+  .getintouch-slider__cart {
+    padding: 35px 20px;
+  }
 }
 .getintouch-slider .swiper-slide-active.getintouch-slider__slide {
   background-color: #252b42;
