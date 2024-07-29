@@ -115,12 +115,16 @@ if (document.querySelector('.getintouch-slider')) {
 		centeredSlides: true,
 		slidesPerView: "auto",
 		coverflowEffect: {
-			rotate: 50,
-			stretch: 0,
-			depth: 100,
+			rotate: 25,
+			stretch: -20,
+			depth: 300,
 			modifier: 1,
-			slideShadows: true,
-		}
+			slideShadows: false,
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 	});
 }
 // //Инициализация и Настройки слайдера 3

@@ -868,30 +868,33 @@ body {
 }
 //======================================================================
 .getintouch {
+	background-color: #f3f3f3;
 	// .getintouch__container
 	&__container {
 	}
 	// .getintouch__top
 	&__top {
+		margin: 0px 0px 80px 0px;
 	}
 	// .getintouch__slider
 	&__slider {
+		padding: 0px 0px 150px 0px;
 	}
 }
 .getintouch-slider {
 	// .getintouch-slider__body
 	&__body {
+		height: 393px;
 	}
 	// .getintouch-slider__slide
 	&__slide {
-		width: 300px;
-		height: 300px;
+		width: 328px;
 		background-position: center;
-		background-size: cover;
+		background-size: contain;
 		display: flex;
-		justify-content: center;
-		// flex-direction: column;
 		align-items: center;
+		background-color: #fff;
+		text-align: center;
 	}
 	// .getintouch-slider__cart all childs
 	&__cart > * {
@@ -903,28 +906,48 @@ body {
 	// .getintouch-slider__cart
 	&__cart {
 		width: 100%;
-		display: block;
-		background-color: #fff;
-		// flex: 0 1 33.333%;
-		// display: flex;
-		// flex-direction: column;
-		// justify-content: center;
-		// align-items: center;
+		padding: 80px 40px;
 	}
-	.swiper-slide-active .getintouch-slider__cart {
+	.swiper-slide-active.getintouch-slider__slide {
 		background-color: #252b42;
+		color: #fff;
 	}
 	// .getintouch-slider__icon
 	&__icon {
 	}
 	// .getintouch-slider__email
 	&__email {
+		color: #252b42;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 171.429%; /* 24px */
+		letter-spacing: 0.2px;
+	}
+	.swiper-slide-active .getintouch-slider__email {
+		color: #fff;
 	}
 	// .getintouch-slider__label
 	&__label {
+		color: #252b42;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 150%; /* 24px */
+		letter-spacing: 0.1px;
 	}
+	.swiper-slide-active .getintouch-slider__label {
+		color: #fff;
+	}
+
 	// .getintouch-slider__button
 	&__button {
+		border-radius: 5px;
+		border: 1px solid #ff7b47;
+		color: #ff7b47;
+	}
+	.swiper-slide-active .getintouch-slider__button {
+		color: #fff;
+		border: 1px solid #fff;
 	}
 }
 //</ОСНОВНОЙ БЛОК>======================================================================
