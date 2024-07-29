@@ -2498,6 +2498,7 @@ ol.counter li::before {
   align-items: center;
   background-color: #fff;
   text-align: center;
+  transition: all 0.5s ease 0s;
 }
 @media (max-width: 479.98px) {
   .getintouch-slider__slide {
