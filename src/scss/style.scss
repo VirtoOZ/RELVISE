@@ -10,7 +10,7 @@
 //</Подключаем шрифты>=================================
 
 //<Иконочные шрифты>=================================
-// @import "icons";
+@import "icons";
 //</Иконочные шрифты>=================================
 
 //<Swiper>=================================
@@ -32,6 +32,11 @@ $md2: 989.98;
 $md3: 759.98;
 $md4: 639.98;
 $md5: 479.98;
+
+$mainColor: #0d5c63;
+$redColor: #e74040;
+$orangeColor: #ff7b47;
+$greyColor: #737373;
 //</ПЕРЕМЕННЫЕ>=================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=================================
@@ -138,6 +143,10 @@ body {
 	}
 	// .page__subscribe
 	&__subscribe {
+		padding: 50px 0px 137px 0px;
+		@media (max-width: ($md3+px)) {
+			padding: 50px 0px 50px 0px;
+		}
 	}
 	// .page__getintouch
 	&__getintouch {
@@ -318,30 +327,17 @@ body {
 	background-color: #fff;
 	box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
 	transition: all 0.3s ease 0s;
-	@media (min-width: ($md2+px)) {
+	@media (any-hover: hover) {
 		&:hover {
 			background-color: #0d5c63;
-			.colum-services__icon_enviroment {
-				background: url("../img/services/enviroment_h.svg") 0 0 no-repeat;
-			}
-			// .colum-services__icon_finance
-			.colum-services__icon_finance {
-				background: url("../img/services/finance_h.svg") 0 0 no-repeat;
-			}
-			// .colum-services__icon_services
-			.colum-services__icon_services {
-				background: url("../img/services/services_h.svg") 0 0 no-repeat;
-			}
-			// .colum-services__label
-			.colum-services__label {
-				color: #fff;
-			}
-			// .colum-services__text
-			.colum-services__text {
+			.colum-services__label,
+			.colum-services__text,
+			.colum-services__icon::before {
 				color: #fff;
 			}
 		}
-	} // .colum-services__body all
+	}
+	// .colum-services__body all
 	&__body > * {
 		margin: 0px 0px 10px 0px;
 		&:last-child {
@@ -351,25 +347,34 @@ body {
 	// .colum-services__body
 	&__body {
 		padding: 35px 40px;
-		@media (max-width: ($md2+px)) {
-			// padding: 25px 20px;
-		}
 	}
 	// .colum-services__icon
 	&__icon {
-		width: 50px;
-		height: 50px;
+		position: relative;
+		z-index: 5;
+		color: $mainColor;
+		font-size: 40px;
 		// .colum-services__icon_enviroment
 		&_enviroment {
-			background: url("../img/services/Enviroment.svg") 0 0 no-repeat;
 		}
 		// .colum-services__icon_finance
 		&_finance {
-			background: url("../img/services/finance.svg") 0 0 no-repeat;
 		}
 		// .colum-services__icon_services
 		&_services {
-			background: url("../img/services/services.svg") 0 0 no-repeat;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				// .colum-services__icon_enviroment
+				&_enviroment {
+				}
+				// .colum-services__icon_finance
+				&_finance {
+				}
+				// .colum-services__icon_services
+				&_services {
+				}
+			}
 		}
 	}
 	// .colum-services__label
@@ -438,10 +443,11 @@ body {
 	&__colum {
 		min-width: 220px;
 		height: 100%;
-		@media (max-width: ($md2+px)) {
-		}
-		@media (max-width: ($md3+px)) {
-			&:last-child {
+		@media (any-hover: hover) {
+			&:hover {
+				.colum-advantages__icon {
+					color: $redColor;
+				}
 			}
 		}
 	}
@@ -500,24 +506,9 @@ body {
 	// .colum-advantages__icon
 	&__icon {
 		display: inline-block;
-		width: 50px;
-		height: 50px;
-		// .colum-advantages__icon_consumer
-		&_consumer {
-			background: url("../img/advantages/consumer.svg") 0 0 no-repeat;
-		}
-		// .colum-advantages__icon_services
-		&_services {
-			background: url("../img/advantages/services.svg") 0 0 no-repeat;
-		}
-		// .colum-advantages__icon_environmental
-		&_environmental {
-			background: url("../img/advantages/environmental.svg") 0 0 no-repeat;
-		}
-		// .colum-advantages__icon_business
-		&_business {
-			background: url("../img/advantages/finance.svg") 0 0 no-repeat;
-		}
+		font-size: 44px;
+		color: $mainColor;
+		transition: color 0.3s ease 0s;
 	}
 	// .colum-advantages__label
 	&__label {
@@ -709,8 +700,17 @@ body {
 	&:last-child {
 		margin: 0px 0px 0px 0px;
 	}
+	@media (any-hover: hover) {
+		&:hover {
+			.row-description__icon {
+				color: $orangeColor;
+			}
+		}
+	}
 	// .row-description__icon
 	&__icon {
+		font-size: 26px;
+		color: $mainColor;
 	}
 	// .row-description__body
 	&__body {
@@ -757,8 +757,12 @@ body {
 	// .brandslider__image
 	&__image {
 		padding: 0px 10px;
-		img {
-			max-width: 100%;
+		font-size: 60px;
+		color: $greyColor;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $orangeColor;
+			}
 		}
 	}
 }
@@ -927,6 +931,8 @@ body {
 	}
 	// .getintouch-slider__icon
 	&__icon {
+		font-size: 72px;
+		color: $mainColor;
 	}
 	// .getintouch-slider__email
 	&__email {
@@ -937,7 +943,8 @@ body {
 		line-height: 171.429%; /* 24px */
 		letter-spacing: 0.2px;
 	}
-	.swiper-slide-active .getintouch-slider__email {
+	.swiper-slide-active .getintouch-slider__email,
+	.swiper-slide-active .getintouch-slider__icon {
 		color: #fff;
 	}
 	// .getintouch-slider__label

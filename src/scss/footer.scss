@@ -58,7 +58,6 @@
 }
 .menu-footer {
 	// .menu-footer__menu
-
 	&__menu {
 		display: flex;
 		justify-content: space-between;
@@ -117,51 +116,19 @@
 	&__item {
 		position: relative;
 		padding: 0px 0px 0px 34px;
-		&::after {
-			content: "";
+		&::before {
 			position: absolute;
 			width: 24px;
 			height: 30px;
 			top: 0;
 			left: 0;
 			transition: all 0.3s ease 0s;
+			font-size: 25px;
 		}
-		// .menu-footer__item_tel
-		&_tel {
-			&::after {
-				background: url("../img/footer/telephone.svg") left no-repeat;
-			}
-			@media (min-width: ($md2+px)) {
-				&:hover {
-					&::after {
-						background: url("../img/footer/telephone_h.svg") left no-repeat;
-					}
-				}
-			}
-		}
-		// .menu-footer__item_adr
-		&_adr {
-			&::after {
-				background: url("../img/footer/location.svg") left no-repeat;
-			}
-			@media (min-width: ($md2+px)) {
-				&:hover {
-					&::after {
-						background: url("../img/footer/location_h.svg") left no-repeat;
-					}
-				}
-			}
-		}
-		// .menu-footer__item_mail
-		&_mail {
-			&::after {
-				background: url("../img/footer/mail.svg") left no-repeat;
-			}
-			@media (min-width: ($md2+px)) {
-				&:hover {
-					&::after {
-						background: url("../img/footer/mail_h.svg") left no-repeat;
-					}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					color: #8ec2f2;
 				}
 			}
 		}
@@ -197,6 +164,28 @@
 	}
 	// .social__image
 	&__image {
+		font-size: 24px;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		&::before {
+			color: $greyColor;
+		}
+	}
+	&__image._icon-facebook::before {
+		color: #335bf5;
+	}
+	&__image._icon-instagram::before {
+		color: #e51f5a;
+	}
+	&__image._icon-tweeter::before {
+		color: #21a6df;
+	}
+	&__image._icon-youtube::before {
+		color: #e42f08;
+		// box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 	}
 }
 //======================================================================

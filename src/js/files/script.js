@@ -1,3 +1,16 @@
+// SlideUP
+import { _slideUp } from "./functions.js";
+// SlideDown
+import { _slideDown } from "./functions.js";
+//SlideToggLe
+import { _slideToggle } from "./functions.js";
+//</ANIM-SLIDE>================================================================
+
+//<isMobile>================================================================
+//Проверка на каком устройстве работаем
+import { isMobile } from "./functions.js";
+//</isMobile>================================================================
+
 //<BURGER>=================================
 const iconMenu = document.querySelector('.menu__icon');//находим класс menu__icon
 const menuBody = document.querySelector('.menu__body');//находим класс menu__body
@@ -26,15 +39,3 @@ if (iconMenu) {//Проверяем есть ли menu__icon
 Выписано из видео фрилансера.
 В CSS нужно установить display: none; для родителя.
 */
-// SlideUP
-import { _slideUp } from "./functions.js";
-// SlideDown
-import { _slideDown } from "./functions.js";
-//SlideToggLe
-import { _slideToggle } from "./functions.js";
-//</ANIM-SLIDE>================================================================
-
-//<isMobile>================================================================
-//Проверка на каком устройстве работаем
-import { isMobile } from "./functions.js";
-//</isMobile>================================================================

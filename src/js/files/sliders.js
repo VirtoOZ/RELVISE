@@ -83,11 +83,11 @@ if (document.querySelector('.brandslider')) {
 		},
 		breakpoints: {
 			320: {
-				slidesPerView: 1,
+				slidesPerView: 3,
 				// autoHeight: false,
 			},
 			480: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			640: {
 				slidesPerView: 4,
@@ -114,6 +114,7 @@ if (document.querySelector('.getintouch-slider')) {
 		grabCursor: true,
 		centeredSlides: true,
 		slidesPerView: "auto",
+		// centeredSlidesBounds: true,
 		coverflowEffect: {
 			rotate: 25,
 			stretch: -20,

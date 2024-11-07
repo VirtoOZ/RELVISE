@@ -36,7 +36,7 @@
 	font-size: 14px;
 	// line-height: 18px;
 	transition: all 0.3s ease 0s;
-	@media (min-width: 992px) {
+	@media (any-hover: hover) {
 		&:hover {
 			background-color: #ff7b47;
 			color: #fff;
