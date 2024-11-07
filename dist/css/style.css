@@ -1388,7 +1388,7 @@ body._lock {
   color: #000;
   display: none;
   position: absolute;
-  top: 29;
+  top: 29px;
   left: 0;
   min-width: 100%;
   background-color: #fff;
@@ -2162,7 +2162,7 @@ ol.counter li::before {
 }
 
 .page .breadcrumbs__item {
-  color: 999px;
+  color: #999;
   font-weight: 300;
 }
 
@@ -2386,9 +2386,9 @@ ol.counter li::before {
 }
 
 .title-block__text {
-  color: #737373;
-  font-size: 14px;
-  font-weight: 500;
+  color: #666;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 20px;
   /* 142.857% */
   letter-spacing: 0.2px;
@@ -2704,7 +2704,7 @@ ol.counter li::before {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 200%;
   /* 28px */
   letter-spacing: 0.2px;
